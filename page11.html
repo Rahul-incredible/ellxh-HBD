@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ellah ❤️> </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background: #ff4b6e;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff2f5c;
+    }
+    img {
+      width: 220px;
+      border-radius: 15px;
+      margin: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
 
+<div class="page" id="page1">
+  <h1>Hey Ellah 💖</h1>
+  <p>
+   “Happy birthday!
+    to the girl who stole my heart and never gave it back.
+    Keep it, it looks good on you hehehe.” 🫶🏻
+  </p>
+  <button onclick="nextPage()">Next ➜</button>
+</div>
+
+<div class="page hidden" id="page2">
+  <h1>Some Feelings 🌸</h1>
+  <p>
+    “Make a wish,
+    but you should know,
+    I’ve already got everything I wished for: you.” 💗
+  </p>
+  <button onclick="nextPage()">Next ➜</button>
+</div>
+
+<div class="page hidden" id="page3">
+  <h1>Us & Music 🎶</h1>
+  <p>
+    🎵 Mundo – IV of spades  
+    <br>🎵 Breakeven - The Script  
+    <br>🎵 Saiyaar - Tanishk Bagchi
+    <br> 🎵 Baby - Justin Bieber
+    <br><br>
+    "every one of these songs makes me think of you,
+    so you’re basically stuck in my head on repeat." 😉💞
+    “Every time one of these songs plays,
+     my mind goes straight to you.”
+  </p>
+  <button onclick="nextPage()">Next ➜</buton>
+</div>
+
+<div class="page hidden" id="page4">
+  <h1>Mine Girll 📸</h1>
+  <img src="Screenshot_20260125_214637.jpg">  <img src="file_0000000042107209b73eb532f95870ec.png">
+  <img src="Screenshot_20260125_214632.jpg">
+  <button onclick="nextPage()">Next ➜</button>
+</div>
+
+<div class="page hidden" id="page5">
+  <h1>My Question ❤️</h1>
+  <p>
+    “Hope this makes you smile as much as you make me smile.”
+  <br>
+    “Today is your day, but let’s be honest,
+     I’m the one who got the best gift: you.”
+  <br>
+     “Thank you for being the melody in my life.”
+  </p>
+</div>
+
+<script>
+  let current = 1;
+  function nextPage() {
+    document.getElementById("page" + current).classList.add("hidden");
+    current++;
+    document.getElementById("page" + current).classList.remove("hidden");
+  }
+</script>
+
+</body>
+</html>
