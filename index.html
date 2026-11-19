@@ -1,118 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Pihu ❤️</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      color: #fff;
-      text-align: center;
-      overflow-x: hidden;
-    }
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 600px;
-      line-height: 1.6;
-    }
-    button {
-      margin-top: 20px;
-      padding: 12px 25px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 25px;
-      background: #ff4b6e;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #ff2f5c;
-    }
-    img {
-      width: 220px;
-      border-radius: 15px;
-      margin: 15px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>For You ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{
+    margin:0;
+    height:100vh;
+    background:linear-gradient(to bottom, #ffe6ec, #fff);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:'Quicksand', sans-serif;
+}
+.box{
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+h1{color:#ff4d79;}
+button{
+    margin-top:20px;
+    padding:15px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ff4d79;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+button:hover{opacity:0.85;}
+</style>
 </head>
 <body>
 
-<div class="page" id="page1">
-  <h1>Hey Pihu 💖</h1>
-  <p>
-    Shayad yeh page simple lage…  
-    par iske har word mein sirf **tum** ho.  
-    Thoda cute, thoda emotional — bilkul tum jaise 🫶🏻
-  </p>
-  <button onclick="nextPage()">Next ➜</button>
+<div class="box">
+    <h1>Hey my love 💖</h1>
+    <p>I made something special just for you…</p>
+    <p>Are you ready? 😘</p>
+    <button onclick="location.href='page2.html'">Yes, show me ❤️</button>
 </div>
-
-<div class="page hidden" id="page2">
-  <h1>Some Feelings 🌸</h1>
-  <p>
-    Tum ho toh sab kuch thoda easy lagta hai.  
-    Tum ho toh silence bhi loud lagta hai.  
-    Fakira sa ho jaata hoon jab tum saamne hoti ho 💗
-  </p>
-  <button onclick="nextPage()">Next ➜</button>
-</div>
-
-<div class="page hidden" id="page3">
-  <h1>Us & Music 🎶</h1>
-  <p>
-    🎵 Fakira – Sanam Puri  
-    <br>🎵 Tum Ho Toh (Saiyaara)  
-    <br>🎵 Heer Ranjha  
-    <br><br>
-    Kuch gaane sirf gaane nahi hote…  
-    woh feelings ban jaate hain — jaise **tum** 💞
-  </p>
-  <button onclick="nextPage()">Next ➜</buton>
-</div>
-
-<div class="page hidden" id="page4">
-  <h1>Meri Rasmalai 📸</h1>
-  <img src="pihu11.jpg">  <img src="pihu12.jpg">
-  <img src="pihu12.jpg">
-  <button onclick="nextPage()">Next ➜</button>
-</div>
-
-<div class="page hidden" id="page5">
-  <h1>One Last Thing 🥹❤️</h1>
-  <p>
-    Agar main Heer hoon…  
-    toh tum meri Ranjha ho.  
-    Aur agar main sweet hoon…  
-    toh tum meri **Rasmalai Pihu** ho 😭💖
-  </p>
-</div>
-
-<script>
-  let current = 1;
-  function nextPage() {
-    document.getElementById("page" + current).classList.add("hidden");
-    current++;
-    document.getElementById("page" + current).classList.remove("hidden");
-  }
-</script>
 
 </body>
 </html>
